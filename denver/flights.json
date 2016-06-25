@@ -1,0 +1,33 @@
+{
+    "flights" : 
+    [
+        {
+            "depart_date" : "Sunday July 17, 2016 13:00:00 (pm)",
+            "arrive_date" : "Sunday July 17, 2016 14:50:00 (pm)",
+            "number" : 1475,
+            "from" : "STL",
+            "to" : "DFW"
+        },
+        {
+            "depart_date" : "Sunday July 17, 2016 17:35:00 (pm)",
+            "arrive_date" : "Sunday July 17, 2016 19:44:00 (pm)",
+            "number" : 2180,
+            "from" : "DFW",
+            "to" : "DEN"
+        },
+        {
+            "depart_date" : "Friday July 22, 2016 20:39:00 (pm)",
+            "arrive_date" : "Friday July 22, 2016 22:39:00 (pm)",
+            "number" : 379,
+            "from" : "DEN",
+            "to" : "DFW"
+        },
+        {
+            "depart_date" : "Friday July 22, 2016 23:40:00 (pm)",
+            "arrive_date" : "Saturday July 23, 2016 01:26:00 (am)",
+            "number" : 1235,
+            "from" : "DFW",
+            "to" : "STL"
+        }
+    ]
+}
