@@ -8,6 +8,10 @@
 <body ng-app="app">
 	<div ng-controller="HelloController">
 		<h2>{{message}}</h2>
+        <li ng-repeat="day in days">
+            {{ day.name }}
+        </li>
 	</div>
+
 </body>
 </html>
