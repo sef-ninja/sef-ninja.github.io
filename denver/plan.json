@@ -5,12 +5,8 @@
             "name" : "Sunday",
             "actions" : 
             [
-                "Take commuter rail (A Line) to Union Station.  (In airport, follow signs for \"Transit Center\".  Tickets for the A Line may be purchased at the ticket vending machines located on the train platform using cash or credit cards.)",
-                "Take bus (FF1) to US 36 & Church Ranch Station and then walk to Westin.  Check into Westin.",
-                "Take bus (FF1, US 36 & Church Ranch Station to Boulder, pay cash with exact change on bus) from Westin Westminster to:  Pearl St. Mall",
-                "Sit on driver-side of bus to see mountains!!",
-                "Buy souvenirs and eat dinner",
-                "Visit with James, Melissa, and kids?"
+                "Text James after landing.  Follow the signs near luggage claim to passenger pickup area.",
+                "Visit with James and kids!!"
             ]
         },
         {
@@ -19,7 +15,9 @@
             [
                 "Take bus (FF1, US 36 & Church Ranch Station to Union Station, pay cash with exact change on bus) from Westin Westminster to:  Snooze an AM Eatery",
                 "Eat breakfast and then walk to Denver office (2300 15TH STREET Denver, CO 80202).  You can walk through the park and then over the South Platt River on the (pedestrian) Highland Bridge.",
-                "Visit with James, Melissa, and kids?"
+                "Take bus (FF1, US 36 & Church Ranch Station to Boulder, pay cash with exact change on bus) from Westin Westminster to:  Pearl St. Mall",
+                "Sit on driver-side of bus to see mountains!!",
+                "Buy souvenirs and eat dinner",
 
             ]
         },
@@ -54,8 +52,7 @@
                 "Foundational Front-End Architecture: Getting the Most out of Frameworks, Libraries, Events, and the Browser Platform (Without Losing Your Mind)",
                 "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker)",
                 "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker) (continued)",
-                "15 Best Practices for designing superior RESTful APIs",
-                "Visit with James, Melissa, and kids?"
+                "15 Best Practices for designing superior RESTful APIs"
             ]
         },
         {
