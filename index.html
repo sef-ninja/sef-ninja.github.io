@@ -1,12 +1,28 @@
-<html>
+<!DOCTYPE html>
+    <html lang="en">
     <head>
-        <title>Denver Plan</title>
+        <title>Denver Trip Plan</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+        <script type="text/javascript" src="denver/script.js"></script>
+        <style>
+            h1, h2, .action {
+                font-family: "Segoe UI",Arial,sans-serif;
+                font-style: normal;
+            }
+        </style>
     </head>
-    <body>
-        <img src="../logo.png"></img><br />
-        <a href="denver/plan.html">plan</a><br />
-        <a href="http://www3.rtd-denver.com/schedules/getSchedule.action?runboardId=162&routeType=30&routeId=FF&branch=FF1&serviceType=3&stops=10+11+12">bus schedule</a><br />
-        <a href="http://www3.rtd-denver.com/schedules/getSchedule.action?runboardId=162&routeId=A&routeType=32&branch=&&direction=W-Bound&serviceType=1#direction">light rail schedule</a><br />
-        <a href="http://www.flydenver.com/parking_transit/transit/university_colorado_line">Denver International Airport light rail details</a><br />
+    <body ng-app="app">
+        <div ng-controller="HelloController">
+            <img src="logo.png"></img>
+            <h1>{{message}}</h1>
+            <div ng-repeat="day in days">
+                <h2>{{ day.name }}</h2>
+                <ul>
+                    <li class="action" ng-repeat="action in day.actions"> 
+                        {{ action }} 
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
