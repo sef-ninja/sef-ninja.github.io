@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <style>
-            h1, h2 {
+            h1, h2, .action {
                 font-family: "Segoe UI",Arial,sans-serif;
                 font-style: normal;
             }
@@ -18,7 +18,7 @@
             <div ng-repeat="day in days">
                 <h2>{{ day.name }}</h2>
                 <ul>
-                    <li ng-repeat="action in day.actions"> 
+                    <li class="action" ng-repeat="action in day.actions"> 
                         {{ action }} 
                     </li>
                 </ul>
