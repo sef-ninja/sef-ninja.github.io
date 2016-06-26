@@ -10,7 +10,7 @@
                 "Take bus (FF1, US 36 & Church Ranch Station to Boulder, pay cash with exact change on bus) from Westin Westminster to:  Pearl St. Mall",
                 "Sit on driver-side of bus to see mountains!!",
                 "Buy souvenirs and eat dinner",
-                "Visit with James and Melissa?"
+                "Visit with James, Melissa, and kids?"
             ]
         },
         {
@@ -19,7 +19,7 @@
             [
                 "Take bus (FF1, US 36 & Church Ranch Station to Union Station, pay cash with exact change on bus) from Westin Westminster to:  Snooze an AM Eatery",
                 "Eat breakfast and then walk to Denver office (2300 15TH STREET Denver, CO 80202).  You can walk through the park and then over the South Platt River on the (pedestrian) Highland Bridge.",
-                "Visit with James and Melissa?"
+                "Visit with James, Melissa, and kids?"
 
             ]
         },
@@ -29,8 +29,7 @@
             [
                 "Application development with Docker, Kubernetes, and OpenShift",
                 "Dinner/Keynote",
-                "Outdoor reception",
-                "Visit with James and Melissa?"
+                "Outdoor reception"
             ]
         },
         {
@@ -56,7 +55,7 @@
                 "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker)",
                 "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker) (continued)",
                 "15 Best Practices for designing superior RESTful APIs",
-                "Visit with James and Melissa?"
+                "Visit with James, Melissa, and kids?"
             ]
         },
         {
