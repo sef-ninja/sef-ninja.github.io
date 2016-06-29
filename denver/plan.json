@@ -20,48 +20,6 @@
                 "Buy souvenirs and eat dinner",
 
             ]
-        },
-        {
-            "name" : "Tuesday",
-            "actions" : 
-            [
-                "Application development with Docker, Kubernetes, and OpenShift",
-                "Dinner/Keynote",
-                "Outdoor reception"
-            ]
-        },
-        {
-            "name" : "Wednesday",
-            "actions" : 
-            [
-                "5K",
-                "Identity",
-                "Privilege",
-                "Reactive Systems with RXJava",
-                "Reactive Systems with Akka and Java",
-                "HTML5 Revisited",
-                "Keynote: Why does Yesterday's Best Practice Become Tomorrow's Antipattern?",
-                "Fun for all ages: Modding & Hacking Minecraft with ScriptCraft"
-            ]
-        },
-        {
-            "name" : "Thursday",
-            "actions" : 
-            [
-                "Refactoring to Functional Style using Java 8 (Venkat Subramaniam)",
-                "Foundational Front-End Architecture: Getting the Most out of Frameworks, Libraries, Events, and the Browser Platform (Without Losing Your Mind)",
-                "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker)",
-                "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker) (continued)",
-                "15 Best Practices for designing superior RESTful APIs"
-            ]
-        },
-        {
-            "name" : "Friday",
-            "actions" : 
-            [
-                "Call Lyft to get ride to Denver International Airport.",
-                "Modular Architecture - Refactoring the Monolith"
-            ]
-        }            
+        }           
     ]
 }
