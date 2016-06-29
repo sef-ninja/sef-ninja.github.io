@@ -5,21 +5,8 @@
             "name" : "Sunday",
             "actions" : 
             [
-                "Text James after landing.  Follow the signs near luggage claim to passenger pickup area.",
-                "Visit with James and kids!!"
+                "Text James after landing.  Follow the signs near luggage claim to passenger pickup area."
             ]
-        },
-        {
-            "name" : "Monday",
-            "actions" : 
-            [
-                "Take bus (FF1, US 36 & Church Ranch Station to Union Station, pay cash with exact change on bus) from Westin Westminster to:  Snooze an AM Eatery",
-                "Eat breakfast and then walk to Denver office (2300 15TH STREET Denver, CO 80202).  You can walk through the park and then over the South Platt River on the (pedestrian) Highland Bridge.",
-                "Take bus (FF1, US 36 & Church Ranch Station to Boulder, pay cash with exact change on bus) from Westin Westminster to:  Pearl St. Mall",
-                "Sit on driver-side of bus to see mountains!!",
-                "Buy souvenirs and eat dinner",
-
-            ]
-        }           
+        }         
     ]
 }
