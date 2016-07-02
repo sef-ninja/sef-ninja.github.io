@@ -7,8 +7,8 @@ import {Tab} from './tab';
     selector: 'app'
     template: `
       <tabs>
-        <tab [tabTitle]="'Tab 1'">Tab 1 Content</tab>
-        <tab tabTitle="Tab 2">Tab 2 Content</tab>
+        <tab [tabTitle]="'Plan'">Denver Trip Plan</tab>
+        <tab tabTitle="Flights">Denver Trip Flight Information</tab>
       </tabs>
     `,
     directives: [Tabs, Tab]
