@@ -9,7 +9,44 @@ import {Tab} from './tab';
     selector: 'app'
     template: `
       <tabs>
-        <tab [tabTitle]="'Plan'">Denver Trip Plan</tab>
+        <tab [tabTitle]="'Plan'">
+           <h2>Sunday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>
+           <h2>Monday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>           
+           <h2>Tuesday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>           
+           <h2>Wednesday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>           
+           <h2>Thursday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>           
+           <h2>Friday</h2>
+           <ul>
+               <li>Activity</li>
+               <li>Activity</li>
+               <li>Activity</li>
+           </ul>           
+        </tab>
         <tab tabTitle="Flights">Denver Trip Flight Information</tab>
       </tabs>
     `,
