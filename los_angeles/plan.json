@@ -1,0 +1,63 @@
+{ 
+    "days" :
+    [
+        {
+            "name" : "Tuesday",
+            "plan" : "Fly into Long Beach airport.  Drive to Torrance via PCH.  Check into hotel or vacation rental in Torrance.  Swim in hotel pool."
+        },
+        {
+            "name" : "Wednesday",
+            "locations" : 
+            [
+                "Torrance",
+                "Lomita",
+                "Redondo Beach"
+            ],
+            "plan" : "Relaxing day, go to beach, drive around Torrance, etc."
+        },
+        {
+            "name" : "Thursday",
+            "locations" : 
+            [
+                "Hollywood",
+                "Griffith Park"
+            ],
+            "plan" : "Observatory in the morning, and then Hollywood sights."
+        },
+        {
+            "name" : "Friday",
+            "locations" : [],
+            "plan" : ""
+        },
+        {
+            "name" : "Saturday",
+            "locations" : [],
+            "plan" : "Visit people, relax"
+        },
+        {
+            "name" : "Sunday",
+            "locations" : [],
+            "plan" : ""
+        },
+        {
+            "name" : "Monday",
+            "locations" : [],
+            "plan" : ""
+        },
+        {
+            "name" : "Tuesday",
+            "locations" : [],
+            "plan" : "Universal Studios Hollywood"
+        },
+        {
+            "name" : "Wednesday",
+            "locations" : [],
+            "plan" : ""
+        },
+        {
+            "name" : "Thursday",
+            "locations" : [],
+            "plan" : "Check out of hotel or vacation rental and fly to St. Louis"
+        },
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "drives" : [
+        { 
+            "description" : "Drive Through Redondo Beach My Town",
+            "href" : "https://www.youtube.com/watch?v=ecJfgZEEmBA" 
+        },
+        { 
+            "description" : "Riviera Village South Redondo Beach CA",
+            "href" : "https://www.youtube.com/watch?v=uEgdG_LyxME" 
+        },
+        { 
+            "description" : "Hollywood Riviera - Redondo Beach, CA",
+            "href" : "https://www.youtube.com/watch?v=bVaUbljLTDs"
+        },
+        { 
+            "description" : "Driving on Esplanade Redondo Beach California2013",
+            "href" : "https://www.youtube.com/watch?v=0wJzn7xcO-o" 
+        }
+    ]
+}

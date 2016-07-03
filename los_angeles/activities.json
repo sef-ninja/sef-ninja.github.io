@@ -1,0 +1,419 @@
+{
+    "activities" : [
+        { 
+            "description" : "Drive along the Esplanade in Redondo Beach",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive through Palos Verdes",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Torrance farmers market",
+            "notes" : "Near Wilson Park",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Rent bikes and ride through old neighborhood",
+            "notes" : "Ride down 225th St. and 224th St.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive from Long Beach airport",
+            "notes" : "Take the 405 (San Diego Fwy) W., get off on Hawthorne, and go S.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive W. Torrance Blvd (starting at Crenshaw)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "From neighborhood, drive Madrona (where old train tracks used to be at end of 225th St.)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive \"scenic route\" to neighborhood.",
+            "notes" : "Starting at Crenshaw, drive W. on W. 235th St., L. on Nadine Cir., L. on 229th Pl., R. on Madison, R. on 225th St.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive Madrona Ave. N, starting at W. Carson St. (near First Lutheran), R. on Torrance Blvd.",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive S. on Pennsylvania Ave. from Sepulveda to PCH",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive Hawthorne to W. 230th St., to neighborhood (Pass by Y not Burgers and 7-Eleven)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Eat at Denny's (in former Clark Drugs area)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        }, 
+        { 
+            "description" : "Los Angeles Harbor Bay Cruise (from Ports O’ Call Village, San Pedro)",
+            "notes" : "",
+            "links": 
+            [
+                "http://spiritmarine.com/"
+            ],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Queen Mary",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.queenmary.com/"
+            ],
+            "price": 140.0 
+        },
+        { 
+            "description" : "Del Amo Mall",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Event/lecture at USC School of Cinematic Arts",
+            "notes" : "",
+            "links":
+            [ 
+                "https://cinema.usc.edu/events/" 
+            ],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Hollywood Walk of Fame",
+            "notes" : "Parking is available at Hollywood and Highland Center Mall.  Dolby Theatre?",
+            "links": 
+            [ 
+                "http://hollywoodandhighland.com/",
+                "http://www.walkoffame.com/"
+            ],
+            "price": 0.0 
+        },
+        {
+            "description" : "Hollywood sign",
+            "notes" : "Can see from Griffith Observatory parking lot and from Hollywood and Highland Center Mall.",
+            "links": 
+            [ 
+                "http://hollywoodsign.org/",
+                "https://www.tripadvisor.com/Travel-g32655-c174983/Los-Angeles:California:Viewing.The.Hollywood.Sign.html"
+            ],
+            "price": 0.0 
+        },        
+        { 
+            "description" : "See a movie at the Chinese Theatre",
+            "notes" : "Parking is available at Hollywood and Highland.",
+            "links": 
+            [
+                "http://www.tclchinesetheatres.com"
+            ],
+            "price": 0.0 
+        },       
+        { 
+            "description" : "Griffith Observatory",
+            "notes" : "Good weekday activity.  During weekends and holidays, the parking lot fills up quickly.",
+            "links":
+            [
+                "http://www.griffithobservatory.org",
+                "http://2.bp.blogspot.com/-FvDWdQZgDM4/VC3jJZZZnDI/AAAAAAAAANg/PGTYRKvU1d4/s1600/observatory.jpg"
+            ],
+            "price": 0.0 
+        },       
+        { 
+            "description" : "Get photo in front of Bad Robot Studios (wearing Star Wars shirts), 1261 Olympic Boulevard, Santa Monica, CA 90404",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "See game show taping",
+            "notes" : "Maybe email Darryl Seering",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "The Getty Villa, Malibu, CA (Call ahead to reserve parking.  Closed on Tuesdays.)",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.getty.edu/visit/villa/plan/families.html"
+            ],
+            "price": 15.0 
+        },
+        { 
+            "description" : "Torrance house",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Torrance Library",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Complete list of \"quests\" in quest notebooks",
+            "notes" : "Create list of several \"quests\", where each quest consists of multiple goals (such as 'fly a kite at Sam Levy').  After getting stickers for all quest goals, the boys get a small prize.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Play frisbee or fly a kite at Sam Levy",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Torrance Library Southeast Branch (23115 Arlington Ave, Torrance, CA 90501)",
+            "notes" : "Closed Friday and Sunday",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Vans Store (2528 Torrance Blvd, Torrance, CA 90503)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Hawthorne and Sepulveda (aggregate planter)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Gable House Bowl (22501 Hawthorne Blvd, Torrance, CA 90505)",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.gablehousebowl.com"
+            ],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Divide and Conquer: Outdoor/beach yoga",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.meetup.com/topics/outdoor-yoga/us/ca/redondo_beach/"
+            ],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Divide and Conquer: Walk/jog the neighborhood-to-Hickory Park bike route",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Hawthorne house",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "First Lutheran",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "South Bay Preschool",
+            "notes" : "Drive route from neighborhood (E. on W. 235th St., R. on Pennsylvania).  Walk around and create a video.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Picnic at Rocketship Park",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Picnic at Hickory Park",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Picnic at Lomita Park",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Picnic at Delthorne Park",
+            "notes" : "Located at Prairie/Madrona Ave. and Del Amo Blvd.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Picnic at Wilson Park",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Eat at Sizzler on Sepulveda",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Get sandwiches at Giuliano's",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Dinner picnic at Torrance Beach (at sunset)",
+            "notes" : "Bring sandwiches from Giuliano's",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Wilderness Park",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Visit with Ben and the Slaybacks",
+            "notes" : "Take route along coast (PCH through Seal Beach, etc.).  Might do on same day as Harbor cruise.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Visit with Brad",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Visit with Siggi's mom",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Make a dinner that includes some good jicama",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Eat at El Paso Cantina",
+            "notes" : "",
+            "links": [],
+            "price": 60.0 
+        },
+        { 
+            "description" : "Eat at Dominique's Kitchen on PCH (a few blocks east of Esplanade and Sapphire St.)",
+            "notes" : "",
+            "links": [],
+            "price": 80.0 
+        },
+        { 
+            "description" : "Torrance Beach (intersection of Via Riviera and Paseo De La Playa)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive original beach route",
+            "notes" : "Drive from the neighborhood to Sepulveda to Palos Verdes Blvd., etc.",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive Esplanade to Knob Hill Ave., right on Camino Real (past Wilderness Park).  Camino Real turns into Sepulveda.",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Drive S. on Hawthorne, W. on Lomita, S. on Anza, W. on Calle Mayor, R. at PCH, L. at Palos Verdes Blvd., R. at Calle Miramar, L. on Via Riviera",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "La Brea Tar Pits",
+            "notes" : "",
+            "links": [],
+            "price": 34.0 
+        },
+        { 
+            "description" : "Riviera Village (Catalina Ave., Redondo Beach)",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Redondo Beach Pier",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "The Strand at Hermosa Beach",
+            "notes" : "",
+            "links": [],
+            "price": 0.0 
+        },
+        { 
+            "description" : "Boat Ride to Catalina",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.catalinaexpress.com/"
+            ],
+            "price": 128.0
+        },
+        { 
+            "description" : "Catalina Island Tour",
+            "notes" : "",
+            "links": 
+            [
+                "http://www.visitcatalinaisland.com/activities-adventures/land/avalon-scenic-tour",
+            ],
+            "price": 70.0 
+        },
+        { 
+            "description" : "Universal Studios Hollywood",
+            "notes" : "The park is less crowded on weekdays in early June.  Save time at by buying tickets in advance.",
+            "links": 
+            [
+                "http://www.universalstudioshollywood.com/theme-parks/",
+                "https://www.undercovertourist.com/blog/maximize-time-universal-studios-hollywood/"
+            ],
+            "price": 414.0 
+        }
+    ]
+}

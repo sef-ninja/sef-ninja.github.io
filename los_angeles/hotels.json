@@ -1,0 +1,26 @@
+{
+	"hotels" : 
+	[
+	    { 
+	        "name" : "Courtyard Los Angeles Torrance/Palos Verdes",
+	        "description" : "More expensive.  Pool.  Very good location.",
+	        "address" : "2633 Sepulveda Blvd., Torrance, CA 90505"
+	    },
+	    { 
+	        "name" : "Residence Inn by Marriott Manhattan Beach",
+	        "description" : "More expensive.  Next to PCH.  15 min from Torrance.",
+	        "address" : "1700 N Sepulveda Blvd, Manhattan Beach, CA 90266"
+	    },
+	    { 
+	        "name" : "Residence Inn Los Angeles Redondo Beach",
+	        "description" : "Good reviews.  Newer hotel.  More expensive.  Close to PCH and 405.  15 min from Torrance.",
+	        "address" : "2420 Marine Ave, Redondo Beach, CA 90278"
+	    },
+	    { 
+	        "name" : "Extended Stay America Los Angeles - Torrance",
+	        "description" : "Close to Torrance neighborhood.  Less expensive.  Has washing machines.  May not have a swimming pool?",
+	        "address" : "Torrance Blvd., Torrance, CA"
+	    },
+	]
+
+}

@@ -1,0 +1,34 @@
+{
+    "rentals" : [
+        {
+            "description" : "Quiet Retreat Near the Beach",
+            "href" : "https://www.vrbo.com/435268",
+            "cost_per_night" : 195.0
+        },
+        {
+            "description" : "Beachy and Nice Happy Place in Hermosa",
+            "href" : "https://www.vrbo.com/696671",
+            "cost_per_night" : 200.0
+        },
+        {
+            "description" : "Modern Manhattan Beach Duplex - Block from the Beach",
+            "href" : "https://www.vrbo.com/738561",
+            "cost_per_night" : 150.0
+        },
+        {
+            "description" : "Burnham Beach Cottages 2 - Block to Beach",
+            "href" : "https://www.vrbo.com/375691",
+            "cost_per_night" : 175.0
+        },
+        {
+            "description" : "Hidden on Bluff Overlooking Beautiful Pac Ocean, Stay on a Land Conservancy",
+            "href" : "https://www.vrbo.com/821861",
+            "cost_per_night" : 195.0
+        },
+        {
+            "description" : "Cozy Home Close to South Bay Beaches",
+            "href" : "https://www.vrbo.com/830231",
+            "cost_per_night" : 184.0
+        }
+    ]
+}
