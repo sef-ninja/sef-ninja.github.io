@@ -1,10 +1,35 @@
 <html>
-<head><title>Distributed Authentication/Authorization Notes</title>
-</head>
-<body>
-<img src="logo.png"></img><br />
-<h1>Distributed Authentication/Authorization Notes</h1>
-You can implement OAuth and OpenID Connect flows using JSON Web Tokens to achieve the end goal of creating a distributed authentication mechanism for microservices.<br />
-<a href="http://nordicapis.com/how-to-control-user-identity-within-microservices/">How to Control User Identity Within Microservices</a>
-</body>
+  <head>
+    <title>Distributed Authentication/Authorization Notes</title>
+  </head>
+  <body>
+    <img src="logo.png"></img><br />
+    <h1>Distributed Authentication/Authorization Notes</h1>
+
+    <h2>Overview</h2>
+    You can implement OAuth and OpenID Connect flows using JSON Web Tokens to achieve the end goal of creating a distributed authentication mechanism for microservices.<br />
+
+    <h2>OAuth's Four Main Actors</h2>
+    OAuth has four main actors:
+    <ul>
+      <li>Resource Owner (RO): The user</li>
+      <li>Client: The web or mobile app</li>
+      <li>Authorization Server (AS): The OAuth 2.0 server</li>
+      <li>Resource Server (RS): Server providing resources</li>
+    </ul>
+
+    <h2>Simplified Example of an OAuth 2 Flow</h2>
+    <ol>
+      <li>The Client requests access to the Resource Server by calling the Authorization Server.</li>
+      <li>The Authorization Server redirects to allow the user to authenticate, which is usually performed within a browser. This is essentially signing into an authorization server, not the app.</li>
+      <li>The Authorization Server then validates the user credentials and provides an Access Token to client, which can be use to call the Resource Server</li>
+      <li>The Client then sends the Token to the Resource Server</li>
+      <li>The Resource Server asks the Authorization Server if the token is valid.</li>
+      <li>The Authorization Server validates the Token, returning relevant information to the Resource Server i.e. time till token expiration, who the token belongs too.</li>
+      <li>The Resource Server then provides data to the Client. In our case, the requested emails are unbarred and delivered to the client.</li>
+    </ol>
+
+    <h2>Link</h2>
+    <a href="http://nordicapis.com/how-to-control-user-identity-within-microservices/">How to Control User Identity Within Microservices</a>
+  </body>
 </html>
