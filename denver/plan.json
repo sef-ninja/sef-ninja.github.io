@@ -5,6 +5,7 @@
             "name" : "Sunday",
             "actions" : 
             [
+                "Park at SuperPark in St. Louis.",
                 "Text James after landing.  Follow the signs near luggage claim to passenger pickup area.",
                 "Visit with James and kids!!"
             ]
@@ -64,8 +65,9 @@
             "name" : "Friday",
             "actions" : 
             [
-                "Call Lyft to get ride to Denver International Airport.",
-                "Modular Architecture - Refactoring the Monolith"
+                "Modular Architecture - Refactoring the Monolith (if time)",
+                "Take bus (FF1, US 36 & Church Ranch Station to Union Station)",
+                "Take University of Colorado A Line to airport"
             ]
         }            
     ]
