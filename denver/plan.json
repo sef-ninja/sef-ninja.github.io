@@ -65,9 +65,10 @@
             "name" : "Friday",
             "actions" : 
             [
-                "Modular Architecture - Refactoring the Monolith (if time)",
+                "Check out of hotel",
+                "Modular Architecture - Refactoring the Monolith (ends at 10:30 a.m.)",
                 "Take bus (FF1, US 36 & Church Ranch Station to Union Station)",
-                "Take University of Colorado A Line to airport"
+                "Take University of Colorado A Line to airport (Get to airport by 12:30 p.m.)"
             ]
         }            
     ]
