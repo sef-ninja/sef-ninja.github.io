@@ -55,10 +55,10 @@
             "actions" : 
             [
                 "Refactoring to Functional Style using Java 8 (Venkat Subramaniam)",
-                "Foundational Front-End Architecture: Getting the Most out of Frameworks, Libraries, Events, and the Browser Platform (Without Losing Your Mind)",
-                "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker)",
-                "Building a Continuous Delivery Pipeline With Jenkins (and Gradle, Git, Gerrit, Artifactory, Sonar, Jacoco, and Docker) (continued)",
-                "15 Best Practices for designing superior RESTful APIs"
+                "Distributed Tracing of Microservices Architectures",
+                "Hybrid Mobile Apps with HTML5: Easier Than You Think",
+                "Parallel Programming with Java 8 Streams",
+                "High Performance JavaScript Web Apps"
             ]
         },
         {
