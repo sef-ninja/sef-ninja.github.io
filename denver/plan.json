@@ -58,17 +58,19 @@
                 "Distributed Tracing of Microservices Architectures",
                 "Hybrid Mobile Apps with HTML5: Easier Than You Think",
                 "Parallel Programming with Java 8 Streams",
-                "High Performance JavaScript Web Apps"
+                "Comparing Service-based Architectures"
             ]
         },
         {
             "name" : "Friday",
             "actions" : 
             [
-                "Check out of hotel",
-                "Modular Architecture - Refactoring the Monolith (ends at 10:30 a.m.)",
-                "Take bus (FF1, US 36 & Church Ranch Station to Union Station)",
-                "Take University of Colorado A Line to airport (Get to airport by 12:30 p.m.)"
+                "Get up at 6:30 a.m..",
+                "Check out at 7:45 a.m..",
+                "Eat breakfast at 8:00 a.m..",
+                "Get to bus stop by 9:00 a.m..",
+                "Take bus (FF1, US 36 & Church Ranch Station to Union Station).  Get to Union Station by 10:00 a.m..",
+                "Take University of Colorado A Line to airport (Travel time: 37 minutes).  Get to airport by 11:30 p.m.."
             ]
         }            
     ]
