@@ -46,6 +46,18 @@
 	  <li>User as the Resource Owner</li>
 	</ul>
 	
+	<h2>OAuth Scopes</h2>
+	<p>A scope is a permission.</p>
+    <a href="http://docs.apigee.com/api-services/content/working-scopes">apigee: Working with OAuth2 Scopes</a><br />
+	<a href="https://blogs.oracle.com/OracleIDM/entry/securing_access_with_oauth2_how">Article about OAuth2 scopes</a> (Also contains a good description of access tokens.)<br />
+	<p>Figuring out what scopes to expose is a responsibility of an application developer, and it may be confusing at first:
+    <ul>
+        <li>Do I expose a single scope protecting the entire service, or do I expose scopes to protect fine-grained business functionality of my application?</li>
+        <li>Do I break up my service into many smaller services with one scope each, or do I build multi-functional service with multiple fine-grained scopes?</li>
+        <li>How do I balance the needs of my clients to request specific capabilities and the needs of my application owners to manage appropriate policies?</li>
+    </ul>
+    </p>
+	
 	<h2>Blurb</h2>
 	<ul>
 	  <li>Learn techniques and technologies for guarding protected resources in systems composed of multiple distributed HTTP services.</li>
