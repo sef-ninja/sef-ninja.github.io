@@ -59,6 +59,12 @@
 	  <li> A JWT is a compact, URL-safe, encryptable JSON object that is rapidly becoming the standard for token implementation across the web.</li>
 	</ul>
 
+	<h2>Identity</h2>
+	<ul>
+	  <li>The Identity Store (for example Active Directory) contains the user data.  An Identity Provider is a service that exposes this information.</li>
+	  <li>When each service has its own request handler for performing authentication and authorization, it means each service is acting as an Identity Provider, rather than using a single Identity Provider service.  This violates the Single Responsibility Principle.</li>
+	</ul>
+	
 	<h2>Demo</h2>
 	<ul>
 	  <li>Spring Security OAuth 2 Authorization Server</li>
