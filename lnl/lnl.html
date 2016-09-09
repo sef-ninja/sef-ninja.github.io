@@ -15,6 +15,7 @@
     <h2>Overview</h2>
     <ul>
       <li>Possible Title:  Securing APIs with Token-Based Credentials</li>
+      <li>Possible Title:  Token Authentication for Securing APIs</li>
       <li>Securing distributed systems</li>
       <li>A few different types (HTTP Basic over TLS, NTLM, OAuth 2)</li>
 	  <li>Securing microservices with OAuth 2 (We don't want to require each service to have a request handler for authentication/authorization.  Overview diagram of how implicit flow works)</li>
@@ -25,25 +26,37 @@
     <ul>
     	<li><a href="https://dzone.com/articles/api-security-ways-to-authenticate-and-authorize">Securing APIs</a></li>
     	<li><a href="https://ponyfoo.com/articles/json-web-tokens-vs-session-cookies">JWTs vs Session Cookies</a></li>
+    	<li><a href="https://stormpath.com/blog/token-authentication-scalable-user-mgmt">Token Authentication</a></li>
+    	<li><a href="https://www.mobomo.com/2013/11/json-web-token-the-useful-little-standard-you-haven-t-heard-about/">JSON Web Tokens</a></li>
+    	<li><a href="https://www.jsonwebtoken.io/">JWT Encoder</a></li>
+    	<li><a href="http://bitoftech.net/2014/10/27/json-web-token-asp-net-web-api-2-jwt-owin-authorization-server/">Web Api JWT Auth Server</a></li>
     </ul>
 
 	<h2>Topics</h2>
 	<ul>
 	  <li>Denver/UberConf overview</li>
+	  <li></li>
 	  <li>Identity, Federated Identity</li>
 	  <li>HTTP Basic alone is not secure</li>
 	  <li>Privilege</li>
 	  <li>Microservices</li>
 	  <li>TLS is more secure than SSL</li>
+	  <li>Token-based authentication</li>
+	  <li>Using tokens in the place of session IDs</li>
 	  <li>Oauth 2 is not an authentication protocol, and it is not an authorization protocol.  It is a delegation protocol (Include power-of-attorney analogy) (podcast: The user delegates access to app so that it can access resources.  The resource server can still reject the request!!)</li>
 	  <li>Stateless authentication with OAuth 2 and JWT</li>
 	  <li>Stateless tokens</li>
 	  <li>JWT / JOSE</li>
 	  <li>JWT signing by Authorization Server (OAuth server) using private key.  Resource server can verify access token is valid.</li>
+	  <li>WT works by simply encoding a string made up of a small JSON object and hashing it using a secret shared between the two parties. The algorithm is configurable, but is usually HMAC SHA-256.</li>
 	  <li>Passport???</li>
 	  <li>Security issues with storing API key in JavaScript</li>
 	  <li>Token-based credentials provide higher entropy and a more secure form of authentication and authorization than Username Password Credentials</li>
 	  <li>With token-based credentials, the Identity Provider issues tokens based on an initial authentication request with username/password credentials. From then on, the app only has to send the token.</li>
+	  <li>Tokens are generated for your users after they present verifiable credentials.  The initial authentication could be by username/password credentials, API keys or even tokens from another service.</li>
+	  <li>Once generated, the token is attached to the user via a browser cookie or saved in local/session storage.</li>
+	  <li>Using tokens in a mobile app allow you to easily and securely control which mobile devices are accessing your API.</li>
+	  <li> A JWT is a compact, URL-safe, encryptable JSON object that is rapidly becoming the standard for token implementation across the web.</li>
 	</ul>
 
 	<h2>Demo</h2>
