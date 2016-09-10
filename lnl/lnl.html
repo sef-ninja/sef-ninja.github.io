@@ -14,8 +14,8 @@
 
     <h2>Overview</h2>
     <ul>
-      <li>Possible Title:  Securing APIs with Token-Based Credentials</li>
-      <li>Possible Title:  Token Authentication for Securing APIs</li>
+      <li>Possible Title:  Securing APIs: Token-Based Authentication</li>
+      <li>Possible Title:  Token-Based Authentication for Securing APIs</li>
       <li>Securing distributed systems</li>
       <li>A few different types (HTTP Basic over TLS, NTLM, OAuth 2)</li>
 	  <li>Securing microservices with OAuth 2 (We don't want to require each service to have a request handler for authentication/authorization.  Overview diagram of how implicit flow works)</li>
@@ -50,7 +50,7 @@
 	  <li>Stateless tokens</li>
 	  <li>JWT / JOSE</li>
 	  <li>JWT signing by Authorization Server (OAuth server) using private key.  Resource server can verify access token is valid.</li>
-	  <li>WT works by simply encoding a string made up of a small JSON object and hashing it using a secret shared between the two parties. The algorithm is configurable, but is usually HMAC SHA-256.</li>
+	  <li>JWT works by simply encoding a string made up of a small JSON object and hashing it using a secret shared between the two parties. The algorithm is configurable, but is usually HMAC SHA-256.</li>
 	  <li>Passport???</li>
 	  <li>Security issues with storing API key in JavaScript</li>
 	  <li>Token-based credentials provide higher entropy and a more secure form of authentication and authorization than Username Password Credentials</li>
@@ -59,6 +59,7 @@
 	  <li>Once generated, the token is attached to the user via a browser cookie or saved in local/session storage.</li>
 	  <li>Using tokens in a mobile app allow you to easily and securely control which mobile devices are accessing your API.</li>
 	  <li> A JWT is a compact, URL-safe, encryptable JSON object that is rapidly becoming the standard for token implementation across the web.</li>
+	  <li>Libraries used by teams:  System.IdentityModel.Tokens.Jwt</li>
 	</ul>
 
 	<h2>Identity</h2>
