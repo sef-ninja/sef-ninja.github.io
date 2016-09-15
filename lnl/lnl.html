@@ -20,7 +20,7 @@
       <li>Securing distributed systems</li>
       <li>A few different types (HTTP Basic over TLS, NTLM, OAuth 2)</li>
 	  <li>Securing microservices with OAuth 2 (We don't want to require each service to have a request handler for authentication/authorization.  Overview diagram of how implicit flow works)</li>
-      <li>Demo</li>
+      <li>Demo: OAuth 2.0 Implicit Grant Flow using JWT Access Tokens</li>
     </ul>
 	
 	<h2>Resources</h2>
@@ -65,6 +65,7 @@
 	  <li>Using tokens in a mobile app allow you to easily and securely control which mobile devices are accessing your API.</li>
 	  <li> A JWT is a compact, URL-safe, encryptable JSON object that is rapidly becoming the standard for token implementation across the web.</li>
 	  <li>Libraries used by teams:  System.IdentityModel.Tokens.Jwt</li>
+	  <li><a href="http://passportjs.org/">Passport</a> for front-end OAuth 2</li>
 	</ul>
 
 	<h2>Identity</h2>
@@ -75,11 +76,14 @@
 	
 	<h2>Demo</h2>
 	<ul>
+	  <li>OAuth 2.0 Implicit Grant Flow</li>
+	  <li>JWT Access Tokens</li>
 	  <li>Spring Boot is an application-bootstrapping framework that helps with the creation of Spring based applications with no necessary XML configuration or code generation.</li>
 	  <li>Spring Security OAuth 2 Authorization Server</li>
+	  <li>Resource Server (Lunch Items REST API):  C# or Node.js</li>
 	  <li>AngularJS/sass/materialize??? client</li>
-	  <li><a href="http://passportjs.org/">Passport</a> for front-end OAuth 2</li>
 	  <li>User as the Resource Owner</li>
+	  <li>In Implicit Grant Flow, the client secret is not used, as it cannot be kept confidential by a JavaScript app running in the browser.  (Can be decompiled, source code inspected, etc..)</li>
 	</ul>
 	
     <h2>OAuth 2.0 Spec Highlights</h2>
