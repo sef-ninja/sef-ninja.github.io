@@ -107,6 +107,14 @@
     	<li>There’s a standardized web protocol called Token Introspection that the authorization server can offer, allowing the resource server to check the token’s state at runtime.</li>
     </ul>
 
+    <h2>Protecting a web API with OAuth</h2>
+    <p>Protecting a web API with OAuth is fairly straightforward:</p>
+    <ul>
+    	<li>The token gets parsed out of the incoming request.</li>
+    	<li>The token is validated with the authorization server.</li>
+    	<li>The response is served based on what the token is good for.</li>
+    </ul>
+
 	<h2>OAuth Scopes</h2>
 	<p>Information about serving user-specific data can be found in the following section of OAuth 2 in Action: Different users for different data results.  In the demo project, resources (lunch items) can be associated with specific employeeId values!!  (This is a very powerful design pattern, as it can protect the resource owner’s privacy by not revealing personally identifying information unnecessarily.)</p>
 	<p>A scope is a permission.</p>
