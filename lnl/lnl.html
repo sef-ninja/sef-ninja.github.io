@@ -50,6 +50,7 @@
 	  <li>TLS is more secure than SSL</li>
 	  <li>Token-based authentication</li>
 	  <li>Using tokens in the place of session IDs</li>
+	  <li>It is not secure to store API keys in your JavaScript.  With a JavaScript app all requests come from the client which is the same place where all the code is stored which means if you store your API key in a JavaScript web app you might as well just print it out in big bold letters across the homepage as the whole world now has access to it through their browser’s dev tools.</li>
 	  <li>Oauth 2 is not an authentication protocol, and it is not an authorization protocol.  It is a delegation protocol (Include power-of-attorney analogy) (podcast: The user delegates access to app so that it can access resources.  The resource server can still reject the request!!)</li>
 	  <li>Stateless authentication with OAuth 2 and JWT</li>
 	  <li>Stateless tokens</li>
