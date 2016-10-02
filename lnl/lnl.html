@@ -109,8 +109,30 @@
       <li>Tokens for arcade games... (Include .mp3 of 80's ambient arcade noise?  Include game cabinets image.  Include token machine image and tokens image.).  Insert tokens in order to be granted limited access to the game.  You can play the game, but you cannot reset the high scores, etc..</li>
       <li>Slugs.  (Show electrical box image.)  Lore around my small school was that you could use slugs to trick the machine into letting you play the game.  It exploited a system vulnerability.  At an abstract level, you were forging an access token.  (Might use this to segue into JWT signing with private key so that the resource server knows the access token has not been forged...)</li>
       <li>Include an image of a car key.  OAuth 2 in Action describes the analogy of a the valet key, where a car owner can grant limited access to the vehicle.<li>
-
     </ul>
+
+    <h2>OAuth 2</h2>
+    <p>OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean. It works by delegating user authentication to the service that hosts the user account, and authorizing third-party applications to access the user account. OAuth 2 provides authorization flows for desktop apps, web apps, and mobile apps.</p><br />
+    
+    <h2>OAuth's Four Main Actors</h2>
+    <p>OAuth has four main actors:</p>
+    <ul>
+      <li>Resource Owner (RO): The user</li>
+      <li>Client: The web or mobile app</li>
+      <li>Authorization Server (AS): The OAuth 2.0 server</li>
+      <li>Resource Server (RS): Server providing resources</li>
+    </ul><br />
+
+    <h2>Simplified Example of an OAuth 2 Flow</h2>
+    <ol>
+      <li>The Client requests access to the Resource Server by calling the Authorization Server.</li>
+      <li>The Authorization Server redirects to allow the user to authenticate, which is usually performed within a browser. This is essentially signing into an authorization server, not the app.</li>
+      <li>The Authorization Server then validates the user credentials and provides an Access Token to client, which can be used to call the Resource Server</li>
+      <li>The Client then sends the Token to the Resource Server</li>
+      <li>The Resource Server asks the Authorization Server if the token is valid.</li>
+      <li>The Authorization Server validates the Token, returning relevant information to the Resource Server i.e. time till token expiration, who the token belongs to.</li>
+      <li>The Resource Server then provides data to the Client.</li>
+    </ol><br />
 
     <h2>OAuth 2.0 Spec Highlights</h2>
     <ul>
@@ -147,6 +169,18 @@
 	<h2>General OAuth 2 Resources</h2>
 	<a href="https://api.slack.com/docs/oauth">Using OAuth 2.0 (Slack)</a><br />
 	
+    <h2>Additional Articles</h2>
+	<a href="https://en.wikipedia.org/wiki/Federated_identity">Federated Identity</a><br />
+    <a href="http://www.baeldung.com/spring-security-oauth-jwt">Good Spring Security JWT Tutorial with code</a><br />
+    <a href="https://www.youtube.com/watch?v=USMl2GNg2r0">Good talk about securing microservices</a><br />
+    <a href="http://nordicapis.com/how-to-control-user-identity-within-microservices/">How to Control User Identity Within Microservices</a><br />
+    <a href="http://self-issued.info/docs/draft-jones-json-web-token-01.html#anchor3">Good JWT Overview</a><br />
+    <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2">Good introduction to OAuth2</a><br />
+    <a href="https://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v">OAuth2 Authorization Server in Spring</a><br />
+    <a href="http://www.asp.net/aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server">OAuth2 Authorization Server in OWIN</a><br />
+    <a href="http://connect2id.com/learn/openid-connect">Good OpenID Connect explanation</a><br />
+    <a href="http://jarbytes.com/jwt-on-dropwizard.html">JWT on Dropwizard</a><br />
+
 	<h2>Implicit Grant</h2>
 	<ul>
 		<li>In the Implicit Grant type, the client is in the browser.</li>
