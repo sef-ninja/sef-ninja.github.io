@@ -53,6 +53,8 @@
 	  <li>Using tokens in the place of session IDs</li>
 	  <li>It is not secure to store API keys in your JavaScript.  With a JavaScript app all requests come from the client which is the same place where all the code is stored which means if you store your API key in a JavaScript web app you might as well just print it out in big bold letters across the homepage as the whole world now has access to it through their browser’s dev tools.</li>
 	  <li>Oauth 2 is not an authentication protocol, and it is not an authorization protocol.  It is a delegation protocol (Include power-of-attorney analogy) (podcast: The user delegates access to app so that it can access resources.  The resource server can still reject the request!!)</li>
+	  <li>One of the main goals of OAuth 2:  Give the client access to the protected resource on behalf of the resource owner.</li>
+	  <li>OAuth 2 description (from the spec):  The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf.</li>
 	  <li>Stateless authentication with OAuth 2 and JWT</li>
 	  <li>Stateless tokens</li>
 	  <li>JWT / JOSE</li>
