@@ -156,31 +156,34 @@
 	<h2>OAuth Scopes</h2>
 	<p>Information about serving user-specific data can be found in the following section of OAuth 2 in Action: Different users for different data results.  In the demo project, resources (lunch items) can be associated with specific employeeId values!!  (This is a very powerful design pattern, as it can protect the resource owner’s privacy by not revealing personally identifying information unnecessarily.)</p>
 	<p>A scope is a permission.</p>
-    <a href="http://docs.apigee.com/api-services/content/working-scopes">apigee: Working with OAuth2 Scopes</a><br />
-	<a href="https://blogs.oracle.com/OracleIDM/entry/securing_access_with_oauth2_how">Article about OAuth2 scopes</a> (Also contains a good description of access tokens.)<br />
-	<p>Figuring out what scopes to expose is a responsibility of an application developer, and it may be confusing at first:
-    <ul>
-        <li>Do I expose a single scope protecting the entire service, or do I expose scopes to protect fine-grained business functionality of my application?</li>
-        <li>Do I break up my service into many smaller services with one scope each, or do I build multi-functional service with multiple fine-grained scopes?</li>
-        <li>How do I balance the needs of my clients to request specific capabilities and the needs of my application owners to manage appropriate policies?</li>
-    </ul>
-    </p>
-	
+  <ul>
+    <li><a href="http://docs.apigee.com/api-services/content/working-scopes">apigee: Working with OAuth2 Scopes</a></li>
+	  <li><a href="https://blogs.oracle.com/OracleIDM/entry/securing_access_with_oauth2_how">Article about OAuth2 scopes</a> (Also contains a good description of access tokens.)</li>
+  </ul>
+  
+	<p>Figuring out what scopes to expose is a responsibility of an application developer, and it may be confusing at first:</p>
+  <ul>
+    <li>Do I expose a single scope protecting the entire service, or do I expose scopes to protect fine-grained business functionality of my application?</li>
+    <li>Do I break up my service into many smaller services with one scope each, or do I build multi-functional service with multiple fine-grained scopes?</li>
+    <li>How do I balance the needs of my clients to request specific capabilities and the needs of my application owners to manage appropriate policies?</li>
+  </ul>
+  	
 	<h2>General OAuth 2 Resources</h2>
 	<a href="https://api.slack.com/docs/oauth">Using OAuth 2.0 (Slack)</a><br />
 	
-    <h2>Additional Articles</h2>
-	<a href="https://en.wikipedia.org/wiki/Federated_identity">Federated Identity</a><br />
-    <a href="http://www.baeldung.com/spring-security-oauth-jwt">Good Spring Security JWT Tutorial with code</a><br />
-    <a href="https://www.youtube.com/watch?v=USMl2GNg2r0">Good talk about securing microservices</a><br />
-    <a href="http://nordicapis.com/how-to-control-user-identity-within-microservices/">How to Control User Identity Within Microservices</a><br />
-    <a href="http://self-issued.info/docs/draft-jones-json-web-token-01.html#anchor3">Good JWT Overview</a><br />
-    <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2">Good introduction to OAuth2</a><br />
-    <a href="https://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v">OAuth2 Authorization Server in Spring</a><br />
-    <a href="http://www.asp.net/aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server">OAuth2 Authorization Server in OWIN</a><br />
-    <a href="http://connect2id.com/learn/openid-connect">Good OpenID Connect explanation</a><br />
-    <a href="http://jarbytes.com/jwt-on-dropwizard.html">JWT on Dropwizard</a><br />
-
+  <h2>Additional Articles</h2>
+  <ul>
+	  <li><a href="https://en.wikipedia.org/wiki/Federated_identity">Federated Identity</a></li>
+    <li><a href="http://www.baeldung.com/spring-security-oauth-jwt">Good Spring Security JWT Tutorial with code</a></li>
+    <li><a href="https://www.youtube.com/watch?v=USMl2GNg2r0">Good talk about securing microservices</a></li>
+    <li><a href="http://nordicapis.com/how-to-control-user-identity-within-microservices/">How to Control User Identity Within Microservices</a><br /></li>
+    <li><a href="http://self-issued.info/docs/draft-jones-json-web-token-01.html#anchor3">Good JWT Overview</a></li>
+    <li><a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2">Good introduction to OAuth2</a></li>
+    <li><a href="https://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v">OAuth2 Authorization Server in Spring</a></li>
+    <li><a href="http://www.asp.net/aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server">OAuth2 Authorization Server in OWIN</a></li>
+    <li><a href="http://connect2id.com/learn/openid-connect">Good OpenID Connect explanation</a></li>
+    <li><a href="http://jarbytes.com/jwt-on-dropwizard.html">JWT on Dropwizard</a></li>
+  </ul>
 	<h2>Implicit Grant</h2>
 	<ul>
 		<li>In the Implicit Grant type, the client is in the browser.</li>
