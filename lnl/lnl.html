@@ -190,6 +190,13 @@
 		<li>See Chapter 6 in OAuth 2 in Action</li>
 	</ul>
 
+	<h2>HMAC-SHA256</h2>
+	<ul>
+	  <li><a href="http://stackoverflow.com/questions/18687926/verifying-hmac-sha1-signature-in-java">Signature vs. HMAC</a></li>
+	  <li>MACs differ from digital signatures as MAC values are both generated and verified using the same secret key. This implies that the sender and receiver of a message must agree on the same key before initiating communications, as is the case with symmetric encryption. For the same reason, MACs do not provide the property of non-repudiation offered by signatures specifically in the case of a network-wide shared secret key: any user who can verify a MAC is also capable of generating MACs for other messages. In contrast, a digital signature is generated using the private key of a key pair, which is asymmetric encryption. Since this private key is only accessible to its holder, a digital signature proves that a document was signed by none other than that holder. Thus, digital signatures do offer non-repudiation. However, non-repudiation can be provided by systems that securely bind key usage information to the MAC key; the same key is in possession of two people, but one has a copy of the key that can be used for MAC generation while the other has a copy of the key in a hardware security module that only permits MAC verification. This is commonly done in the finance industry.</li>
+	  <li>in order to verify an HMAC, you need to share the key that was used to generate it. You would send the message, the HMAC, and the receiver would have the same key you used to generate the HMAC. They could then use the same algorithm to generate an HMAC from your message, and it should match the HMAC you sent. Public/private keys (assymetric) are not used for this. You need to generate a symmetric key (like AES) and securely share that with the people that will be generating/verifying the HMAC.</li>
+	</ul>
+	
 	<h2>Blurb</h2>
 	<ul>
 	  <li>Learn techniques and technologies for guarding protected resources in systems composed of multiple distributed HTTP services.</li>
