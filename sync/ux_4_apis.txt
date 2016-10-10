@@ -9,7 +9,7 @@ Description: Why your API team (writing HTTP services) needs to consider UX.
   - Ease of use/efficiency
 * UI (User Interface) (Does not have to be graphical UI, web UI, or mobile UI, HTTP services still count!!)
   - One might argue that without the typical user interface, there is no need to consider the user experience
-  - Although a large part of REST API design is focused around enabling computer-to-computer interoperability among components in a distributed system, there is also a human-to-computer element.
+  - Although a large part of REST API design is focused around enabling computer-to-computer interoperability among components in a distributed system, there is also an important element of human-computer interaction.
   - Users (devs from our team, devs from other Asynchrony teams, QAs, deployment team, client QA team, even HTTP proxy servers!)
   - interface (HTTP is between client and resource (look up details).  Bounded context, protocols, (highly cohesive, loosely coupled modules)
 * meme image
