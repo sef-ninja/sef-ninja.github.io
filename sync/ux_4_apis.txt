@@ -1,11 +1,18 @@
 UX 4 APIs
 
+* When I started as a developer on an Asynchrony delivery team, I was delighted to discover that I would have the opportunity to work directly with talented UX experts.  (This would have been a luxury at other places where I have developed software.)
 * Why your API team (writing HTTP services) needs to consider UX
-* meme image
+* UX
+  - design master
+  - palates/colors/layout/font/responsive/etc.
 * UI (User Interface) (Does not have to be graphical UI, web UI, or mobile UI, HTTP services still count!!)
-  - Users (devs, QAs, deployment team, client QA team, even HTTP proxy servers!)
+  - One might argue that without the typical user interface, there is no need to consider the user experience
+  - Users (devs from our team, devs from other Asynchrony teams, QAs, deployment team, client QA team, even HTTP proxy servers!)
   - interface (HTTP is between client and resource (look up details).  Bounded context, protocols, (highly cohesive, loosely coupled modules)
-* Don't just assume that if your HTTP/REST library supports it, that it adheres to the HTTP spec, and that it will provide the client developers and testers a good experience.  You need to also rise up one level of abstraction to ensure that it doesn't provide any unnecessary surprises.  Does it provide valid status codes, does it follow best practices with respect to headers, does it adhere to the uniform interface of HTTP, is it stateless, does it easily allow the deployment team to easily run it on multiple nodes?
+* meme image
+* It's easy to fall into the trap of assuming that just because your HTTP/REST library allows you to create a specific type of URL or payload, and supports using the HTTP GET verb in specific scenarios, that this automatically translates to a well-designed and usable interface.  Don't just assume that if your HTTP/REST library supports it, that it adheres to the HTTP spec, and that it will provide the client developers and testers a good experience.  You need to also rise up one level of abstraction to ensure that it doesn't provide any unnecessary surprises.  Does it provide valid status codes, does it follow best practices with respect to headers, does it adhere to the uniform interface of HTTP, is it stateless, does it easily allow the deployment team to easily run it on multiple nodes?
 * Include "Where HTTP Fits In" diagram.  The users interact with the application protocol
 * Need for good documentation (that is also easy to find).
+* Include quote from Effective Java about the client being a user for the API you are creating.  (While coding, think in terms of API design, where your user is another programmer.)
+* Include scan of "Tokens!" drawing.  (For more details, join the LnL.  Coming Soon!)
 * Mention upcoming LnL
