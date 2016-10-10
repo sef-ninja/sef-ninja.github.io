@@ -1,0 +1,11 @@
+UX 4 APIs
+
+* Why your API team (writing HTTP services) needs to consider UX
+* meme image
+* UI (User Interface) (Does not have to be graphical UI, web UI, or mobile UI, HTTP services still count!!)
+  - Users (devs, QAs, deployment team, client QA team, even HTTP proxy servers!)
+  - interface (HTTP is between client and resource (look up details).  Bounded context, protocols, (highly cohesive, loosely coupled modules)
+* Don't just assume that if your HTTP/REST library supports it, that it adheres to the HTTP spec, and that it will provide the client developers and testers a good experience.  You need to also rise up one level of abstraction to ensure that it doesn't provide any unnecessary surprises.  Does it provide valid status codes, does it follow best practices with respect to headers, does it adhere to the uniform interface of HTTP, is it stateless, does it easily allow the deployment team to easily run it on multiple nodes?
+* Include "Where HTTP Fits In" diagram.  The users interact with the application protocol
+* Need for good documentation (that is also easy to find).
+* Mention upcoming LnL
