@@ -98,6 +98,15 @@
 	  <li>OAuth 2 in Action, Chapter 11 "OAuth Tokens" contains a good description of the different types of tokens such as tokens that act like a handle to information in a database, and structured tokens like JWTs.</li>
 	</ul>
 
+	<h2>Implicit Grant Flow</h2>
+	<ul>
+		<li>The redirect_uri should match the redirect URI that was originally specified when registering the client.</li>
+		<li>The AS redirects the RO's browser to another destination (via HTTP 302 Found).</li>
+		<li>To protect against the "confused deputy problem" and determine if the token is intended for your application and was produced by the other distributed application, you must verify its authenticity and legitimacy by issuing an additional request to the other distributed application.  See <a href="https://dev.clever.com/instant-login/implicit-grant-flow">this article</a>.</li>
+		<li>In the Implicit Grant type, the client is running within the browser.</li>
+		<li>See Chapter 6 in OAuth 2 in Action</li>
+	</ul>
+
 	<h2>Identity</h2>
 	<ul>
 	  <li>The Identity Store (for example Active Directory) contains the user data.  An Identity Provider is a service that exposes this information.</li>
@@ -207,12 +216,6 @@
 	<h2>General OAuth 2 Resources</h2>
 	<p><a href="https://api.slack.com/docs/oauth">Using OAuth 2.0 (Slack)</a></p>
 	
-	<h2>Implicit Grant</h2>
-	<ul>
-		<li>In the Implicit Grant type, the client is in the browser.</li>
-		<li>See Chapter 6 in OAuth 2 in Action</li>
-	</ul>
-
 	<h2>HMAC-SHA256</h2>
 	<ul>
 	  <li><a href="http://stackoverflow.com/questions/18687926/verifying-hmac-sha1-signature-in-java">Signature vs. HMAC</a></li>
