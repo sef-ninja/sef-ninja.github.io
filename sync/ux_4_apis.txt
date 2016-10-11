@@ -1,8 +1,41 @@
 UX 4 APIs
 
-Description: Why your API team (writing HTTP services) needs to consider UX.
+Description: Why a team writing HTTP services still needs to consider UX.
 
-* When I started as a developer on an Asynchrony delivery team, I was delighted to discover that I would have the opportunity to work directly with talented UX experts.  (This would have been a luxury at other places where I have developed software.)
+Outline
+
+* Intro
+* Who are the Users of an API?
+* Improving the User Experience
+* Conclusion
+
+
+
+
+Intro
+-----
+
+* When I started as a dev on an Asynchrony delivery team, I was excited to discover that I would have the opportunity to work directly with talented UX experts.  This would have been a luxury at other places where I had developed software, as we did not have easy access to these masters of design, layout, font, colors, and human-computer interaction.  In reality, many of our UI decisions were based on comments like, "I think I may remember reading about how this should behave in that Don't Make me Think (https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) book".  Because we can consult with these UX professionals here, the single page apps and mobile apps (and Apple TV apps!) we create offer the user with a far greater user experience.  However, I am now a dev on Han Shot First -- a team that creates HTTP services as a backend for mobile and web apps.  Although we do not have a traditional front-end, does our API-oriented team need to be concerned with UX?  As it turns out, the answer is "yes"!
+
+
+Who are our API Users?
+----------------------
+
+One might argue that without the typical user interface, there is no need to consider the user experience.  However, although a large part of REST API design is focused around enabling computer-to-computer interoperability among components in a distributed system, there is also an important element of human-computer interaction.  A user interface (UI) is not limited to a web UI or mobile UI, but also includes the application programming interface (API).  The users of an API are not the employees at the customer site, nor are they the people using their mobile device to browse for shoes or order a pizza.  For our API team, the users are devs from other Asynchrony teams (such as the mobile devs of Team of the Future and the desktop client and web devs of Leviathan), QAs that test our API, the customer's QA team, and the group of Asynchronites responsible for deploying the API into production at the customer site.  As we design and implement our API, we must think in terms of how these individuals will use the API and also anticipate constraints, in order to ensure a positive user experience.
+
+
+Let's Improve the UX!
+---------------------
+
+We can improve the UX of our API by following conventions and best-practices that client devs are familiar with.  For example, we must be cautious not to create an API that is so different that it confuses our users (https://en.wikipedia.org/wiki/Principle_of_least_astonishment).  We should adhere to HTTP's uniform interface, writing endpoints that leverage the "verbs" (GET, PUT, POST, DELETE, etc.) appropriately.  Because HTTP is a protocol between clients and resources, we should create URIs that behave like resources, such as /api/v1/cars/1 instead of using URIs that encourage an remote procedure call (RPC) style of client experience, like /api/v1/addNewCar.  In other words, a resource should feel like a noun and not a verb.
+
+We must be careful to not fall into the trap of assuming that just because a specific HTTP/REST library allows us to create a specific type of URL or payload, and supports using the HTTP verbs in specific scenarios, that this automatically translates to a well-designed interface that offers a great UX to our devs and QAs.  It is important to rise up one level of abstraction to ensure that the API doesn't provide any unexpected surprises.  We should ask: 
+  * Does the endpoint provide valid status codes?
+  * Does it follow best practices with respect to headers?
+  * Does the API erroneously report that client errors are actually server errors?
+  * Does the API have a stateless nature that allows the deployment team to easily run it on multiple nodes?
+
+
 * UX
   - design master
   - palates/colors/layout/font/responsive/etc.
@@ -19,3 +52,5 @@ Description: Why your API team (writing HTTP services) needs to consider UX.
 * Include quote from Effective Java about the client being a user for the API you are creating.  (While coding, think in terms of API design, where your user is another programmer.)
 * Include scan of "Tokens!" drawing.  (For more details, join the LnL.  Coming Soon!)
 * Mention upcoming LnL
+
+
