@@ -10,8 +10,6 @@ Outline
 * Conclusion
 
 
-
-
 Intro
 -----
 
@@ -27,7 +25,30 @@ One might argue that without the typical user interface, there is no need to con
 Let's Improve the UX!
 ---------------------
 
-We can improve the UX of our API by following conventions and best-practices that client devs are familiar with.  For example, we must be cautious not to create an API that is so different that it confuses our users (https://en.wikipedia.org/wiki/Principle_of_least_astonishment).  We should adhere to HTTP's uniform interface, writing endpoints that leverage the "verbs" (GET, PUT, POST, DELETE, etc.) appropriately.  Because HTTP is a protocol between clients and resources, we should create URIs that behave like resources, such as /api/v1/cars/1 instead of using URIs that encourage an remote procedure call (RPC) style of client experience, like /api/v1/addNewCar.  In other words, a resource should feel like a noun and not a verb.
+We can improve the UX of our API by adhering to the HTTP spec, by following REST conventions and best-practices that client devs are familiar with, and by effectively communicating with our users.
+
+  * Adhere to the HTTP spec
+    - HTTP provides a "uniform interface", where the verbs (GET, PUT, POST, DELETE, HEAD, PATCH, etc.) are intended to be used for very specific actions.
+	- Ex: GET and PUT should be idempotent, which means the dev or QA using the API will assume that whether he or she makes the following request once or 300,000 times, the end state of the resource will be the same:  PUT /api/v1/orders/7
+	      In other words, PUT'ing order #7 300,000 times should never result in 300,000 new resources being created!
+    - In order to improve the UX, we should also be in the habit of leveraging the diverse range of status codes provided by HTTP (https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html), and return the right HTTP status code for the specific scenario.  On Han Shot First, we recently completed a story to ensure that if a dev or QA makes an HTTP request that includes an invalid Content-Type header (such as "text/plain" instead of "application/json"), our API will not return a 500 Internal Server Error, but instead point the user in the right troubleshooting direction by returning a 415 Unsupported Media Type.  Because the 415 error code is in the "client error" range of 400-499, the user immediately knows there is a mistake that they can correct, instead of being mislead into believing that a server error occurred that is out of their control. 
+  * Because HTTP is a protocol between clients and resources, we should create URIs that behave like resources, such as /api/v1/cars/1 instead of using URIs that encourage an remote procedure call (RPC) style of client experience, like /api/v1/addNewCar.  In other words, a resource should feel like a noun and not a verb.
+
+We can also enhance the user experience by following REST best practices and patterns.
+   * We must be cautious to avoid creating an API that is so different that it confuses our users (https://en.wikipedia.org/wiki/Principle_of_least_astonishment).  
+   * One pattern we follow on Han Shot First is to use the pattern of a collection resource.  In a collection resource, we use a URL to represent an entire collection of HTTP resources.
+     - For example, to create a new order, an API could support the following endpoint:
+             POST  api/v1/orders
+       The user would send JSON representation of an order as the HTTP request body, and the API would return an HTTP status code of 201 Created.  The API would also include the URL of the newly-generated order resource in the Location response header (Location: http://<host>/api/v1/orders/66).
+	   
+     - The user can immediately retrieve the created order by performing a GET request on that returned URL:
+	         GET api/v1/orders/66
+
+     - The user can also perform a GET on the collection resource itself to retrieve all the orders:
+	         GET api/v1/orders
+     
+     - Finally, the user can perform filtering by appending query parameters onto the collection resource URL:
+	         GET api/v1/orders?term=nachos&type=domestic
 
 We must be careful to not fall into the trap of assuming that just because a specific HTTP/REST library allows us to create a specific type of URL or payload, and supports using the HTTP verbs in specific scenarios, that this automatically translates to a well-designed interface that offers a great UX to our devs and QAs.  It is important to rise up one level of abstraction to ensure that the API doesn't provide any unexpected surprises.  We should ask: 
   * Does the endpoint provide valid status codes?
@@ -35,7 +56,18 @@ We must be careful to not fall into the trap of assuming that just because a spe
   * Does the API erroneously report that client errors are actually server errors?
   * Does the API have a stateless nature that allows the deployment team to easily run it on multiple nodes?
 
+A great way to ensure a good UX is to continuously improve communication between the API team and the API users.
+  * On Han Shot First, we have the luxury of being co-located with our users, so the devs and QAs of our team can easily meet face-to-face with the devs and QAs from the other teams that utilize our API.
+    - Ex: Earlier this week, Leviathan devs requested that we restructure the JSON payload response body of one of our endpoints in order to reduce confusion and improve ease-of-use.
+  * Good API docs
+    - Should be easy to find
+	- Should indicate the HTTP verb, the URL and any URL parameters, and give a clear description of the payload
+	- Swagger
 
+  
+--------------------------------------------------------------------------------------------------------------------------  
+  
+  
 * UX
   - design master
   - palates/colors/layout/font/responsive/etc.
