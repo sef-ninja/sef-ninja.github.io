@@ -56,6 +56,12 @@ We must be careful to not fall into the trap of assuming that just because a spe
   * Does the API erroneously report that client errors are actually server errors?
   * Does the API have a stateless nature that allows the deployment team to easily run it on multiple nodes?
 
+  * Example:  Using the Express framework, a route can be added using the following syntax:
+      app.get('/api/v1/addNewOrder', function (req, res) {
+          // Code to persist the new order to a data store
+      });
+	However, from an HTTP perspective, this GET request would be neither safe (it modifies resource state) nor idempotent (replaying the request would cause an order to be created each time).  Just because we can do it doesn't mean we should do it.
+  
 A great way to ensure a good UX is to continuously improve communication between the API team and the API users.
   * On Han Shot First, we have the luxury of being co-located with our users, so the devs and QAs of our team can easily meet face-to-face with the devs and QAs from the other teams that utilize our API.
     - Ex: Earlier this week, Leviathan devs requested that we restructure the JSON payload response body of one of our endpoints in order to reduce confusion and improve ease-of-use.
