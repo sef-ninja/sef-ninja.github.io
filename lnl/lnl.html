@@ -168,6 +168,8 @@
       <li>Resource Server (RS): Server providing resources</li>
     </ul><br />
 
+    <p>To better understand the OAuth 2.0 Framework, it is important to realize that the client communicates with the authorization server in two distinct ways: via the back channel and via the front channel. The back channel is the direct communication between the client and the token endpoint, whereas the front channel is the indirect communication between the client and the authorization endpoint via the user's agent and based on HTTP redirects. Therefore, the front channel has some significant limitations. Since it's based on redirects, it imposes restrictions on the HTTP features that can be used. The request method must be a GET, and the request information must be passed in the request URI, namely in the URI's query string.</p>
+
     <h2>Simplified Example of an OAuth 2 Flow</h2>
     <ol>
       <li>The Client requests access to the Resource Server by calling the Authorization Server.</li>
