@@ -98,6 +98,9 @@
 	  <li>OAuth 2 in Action, Chapter 11 "OAuth Tokens" contains a good description of the different types of tokens such as tokens that act like a handle to information in a database, and structured tokens like JWTs.</li>
 	</ul>
 
+    <h2>The AS can issue single access token for multiple RS's!</h2>
+    <p>Assuming your system has a single AS, the scopes concept allows you to handle multiple RS's.  You could define a scope per API and have clients ask for one or both scopes.  Access tokens are issued on a per-client basis, so handing out different access tokens to the same client doesn't bring you any security advantage unless the two APIs are controlled by different entities.</p>
+
 	<h2>Implicit Grant Flow</h2>
 	<ul>
 		<li>The redirect_uri should match the redirect URI that was originally specified when registering the client.</li>
@@ -106,6 +109,14 @@
 		<li>In the Implicit Grant type, the client is running within the browser.</li>
 		<li>See Chapter 6 in OAuth 2 in Action</li>
 	</ul>
+
+    <h2>Implicit Grant Flow Sequence Diagram</h2>
+    <ul>
+        <li>Include vertical lines for:  Client, AS, RS</li>
+        <li>Add RO (cartoon user) to left of sequence diagram</li>
+        <li>Under RO, include a rectangle that represents current state of the user agent (browser)</li>
+    	<li>Explicitly state that the client asks for a scope or multiple scopes!</li>
+    </ul>
 
 	<h2>Identity</h2>
 	<ul>
@@ -129,8 +140,10 @@
 	  <li>Securing APIs (Overview of options for securing APIs)</li>
 	  <li>What is OAuth 2.0? (definition from spec, valet key metaphor, etc.)</li>
 	  <li>Securing APIs for Single Page Apps (Implicit Grant flow)</li>
+	  <li>Implicit Grant Flow Sequence Diagram</li>
 	  <li>Slide discussing query parameters (response_type=token, client_id, redirect_uri, scope, state).  See <a href="https://labs.hybris.com/2012/06/05/oauth2-the-implicit-flow-aka-as-the-client-side-flow/">this article</a>.</li>
 	  <li>JSON Web Tokens (arcade token visuals, etc.)</li>
+	  <li>Lunch (Distributed) System Data-Flow Diagram</li>
 	  <li>Demo</li>
 	</ul>
 	
