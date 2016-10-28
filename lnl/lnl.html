@@ -101,6 +101,16 @@
     <h2>The AS can issue single access token for multiple RS's!</h2>
     <p>Assuming your system has a single AS, the scopes concept allows you to handle multiple RS's.  You could define a scope per API and have clients ask for one or both scopes.  Access tokens are issued on a per-client basis, so handing out different access tokens to the same client doesn't bring you any security advantage unless the two APIs are controlled by different entities.</p>
 
+    <h2>JSON Web Tokens (JWTs or "jots")</h2>
+    <ul>
+    	<li>The signature is calculated by base64url encoding the header and payload, concatenating them with a period as a separator, and digitally signing the result.  The signature is then base64Url encoded and appended to the end (after the last period).</li>
+    </ul>
+
+    <h2>JWTs and Stateless Authentication</h2>
+    <p>In authentication, when the user successfully logs in using their credentials, a JWT will be returned and must be saved locally, instead of the traditional approach of creating a session in the server and returning a cookie.</p>
+    <p>Whenever the user wants to access a protected resource, the user agent should send the JWT, typically in the Authorization header using the Bearer schema.</p>
+    <p>This is a stateless authentication mechanism as the user state is never saved in server memory.  This allows you to fully rely on data APIs that are stateless and that even make requests to downstream services.</p>
+
 	<h2>Implicit Grant Flow</h2>
 	<ul>
 		<li>The redirect_uri should match the redirect URI that was originally specified when registering the client.</li>
@@ -143,6 +153,8 @@
 	  <li>Implicit Grant Flow Sequence Diagram</li>
 	  <li>Slide discussing query parameters (response_type=token, client_id, redirect_uri, scope, state).  See <a href="https://labs.hybris.com/2012/06/05/oauth2-the-implicit-flow-aka-as-the-client-side-flow/">this article</a>.</li>
 	  <li>JSON Web Tokens (arcade token visuals, etc.)</li>
+	  <li>JSON Web Tokens (Create nice diagram of header, payload, and signature.  Show how signature is base64Url-encoded and appended to the end.  Mention:  The output is three Base64 strings separated by dots that can be easily passed in HTML and HTTP environments, while being more compact when compared to XML-based standards such as SAML.)</li>
+	  <li>JSON Web Tokens (Demo of jwt.io Debugger)</li>
 	  <li>Lunch (Distributed) System Data-Flow Diagram</li>
 	  <li>Demo</li>
 	</ul>
