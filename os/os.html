@@ -14,10 +14,21 @@
 
     <h2>OAuth 2.0 for Apps</h2>
     <ul>
+      <li>Best practices for implementing <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps-05">OAuth 2.0 for Native Apps</a></li>
 	  <li>Using OAuth 2.0 for Apps is similar to using OAuth 2.0 for websites.</li>
 	  <li>The difference compared with Web-based clients is that the app needs to open the system browser (embedded webviews are strongly discouraged) and supply a local Redirect URI on which it can receive the authorization code.</li>
 	  <li>Unlike with web clients, the OAuth 2.0 client secret (if used) is assumed not to be confidential.</li>
+      <li>The redirect URI specified in the request determines how the authorization code is returned to your application.</li>
+      <li>There are several options available to installed apps for receiving the authorization code.</li>
 	  <li>See <a href="https://developers.google.com/identity/protocols/OAuth2InstalledApp">this article</a></li>
+    </ul>
+
+    <h2>Redirect Methods</h2>
+    <ul>
+      <li>Custom URI Scheme  (Requires an iOS library like <a href="https://openid.github.io/AppAuth-iOS/">AppAuth for iOS</a> to enable the AS to send the authorization code back via a redirect.)</li>
+      <li>Loopback IP Address</li>
+      <li>Manual Copy and Paste (Not Recommended!!)</li>
+      <li>Programmatic Extraction (Using embedded browsers a.k.a. web-views is not recommended!!)</li>
     </ul>
 	
     </body>
