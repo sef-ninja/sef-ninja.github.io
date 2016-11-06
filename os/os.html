@@ -12,6 +12,64 @@
     <img src="../logo.png"></img><br />
     <h1>OAuth 2.0 with PingFederate</h1>
 
+    <h2>PingFederate OAuth 2.0 <a href="https://docs.pingidentity.com/bundle/pf_sm_pingfederateOauth20Endpoints_topic/page/concept/oAuth2_0Endpoints.html">Endpoints</a></h2>
+    <ul>
+      <li>/as/authorization.oauth2</li>
+      <li>/as/token.oauth2
+      <li>/as/revoke_token.oauth2
+      <li>Grant management endpoints (not part of OAuth spec, but commonly provided):  /as/grants.oauth2, /as/oauth_access_grants.ping</li>
+      <li>/.well-known/openid-configuration</li>
+      <li>/pf-ws/rest/sessionMgmt/revokedSris</li>
+    </ul>
+
+    <h2>Configure PingFederate for OAuth</h2>
+    <h3>To use the OAuth Authorization Server (AS):</h3>
+    <ol>
+      <li>Go to the Server Configuration > Server Settings > Roles and Protocols screen.</li>
+      <li>Select the Enable OAuth 2.0 Authorization Server (AS) role check box.</li>
+      <li>(Optional) Select the OpenID Connect check box if you intend to support OpenID Connect use cases as well.</li>
+      <li>Configure the OAuth AS using options available under Server Configuration on the Main Menu, as described in this section.</li>
+    </ol>
+
+    <h2><a href="https://docs.pingidentity.com/bundle/pf_sm_releaseNotes/page/pf_c_82.html">Article</a>: OAuth Authorization Server supports:</h2>
+    <ul>
+      <li>Support for OAuth 2.0 Token Introspection (as defined in RFC 7662) has been added to provide a standards-based mechanism to validate tokens.</li>
+      <li>Encryption can now be configured on JSON Web Token (JWT) formatted OAuth access tokens.</li>
+      <li>The error responses for the Resource Owner Credentials grant type now provide more meaningful error_description parameter details. Messages can additionally be localized and customized through the PingFederate localization framework.</li>
+      <li>OAuth Persistent Grant Expiry can now be defined in minutes.</li>    
+      <li>Elliptic Curve Digital Signature Algorithm (ECDSA) is now available for JWT formatted access tokens.</li> 
+      <li>The JSON Web Token Access Manager can now be configured to publish a JSON Web Key Set with the keys/certificates that can be used for signature verification of access tokens.</li>
+    </ul>
+
+    <h2>URL endpoint for PingFederate signing keys</h2>
+    <p>Q:  In our PingFederate OAuth configuration, we are using a couple of signing keys for the JWT signature and JWE configurations (in Access Token Management). For those keys, is there an API endpoint on the server that exposes them, so our clients can pull them to validate the signatures and decrypt the access tokens?</p>
+    <p>A:  Yes, there is a configurable endpoint in PingFederate 8.2 for this purpose. See the "JWKS Endpoint Path" setting on the JSON Web Token Access Token Manager instance configuration: https://documentation.pingidentity.com/pingfederate/pf82/index.shtml#concept_configuringJsonTokenManagement.html</p>
+
+    <h2>IETF spec <a href="https://tools.ietf.org/html/rfc7662">RFC 7662 (Token Introspection)</a></h2>
+    <h3>Introspection endpoint</h3>
+    <ul>
+      <li>OAuth 2.0 endpoint</li>
+      <li>Takes a parameter representing an OAuth 2.0 token</li>
+      <li>Returns a JWT that includes the claims</li>
+    </ul>
+
+    <h2>Types of token validation</h2>
+    <ul>
+      <li>Remote Validation:  Remote validation consists of calling out to an OAuth 2.0 Authorization Server in a so-called "introspection" or "validation" call. This works with arbitrary token types since the token is opaque to the Resource Server.</li>
+      <li>Local Validation:  Local validation can be used with bearer access tokens that are JSON Web Tokens. It consists of validating the JWT token against a configured set of symmetric or public keys.</li>
+    </ul>
+
+    <h2>PingFederate Token Revocation Endpoint</h2>
+    <ul>
+      <li>The token revocation endpoint is defined in the OAuth 2.0 Token Revocation (RFC 7009) specification.</li>
+      <li>Allows clients to notify the authorization server that a previously obtained refresh or access token is no longer needed.</li>
+      <li>Revocation request invalidates the actual token and possibly other tokens based on the same authorization grant.</li>
+      <li>Endpoint:  /as/revoke_token.oauth2</li>
+      <li>Per OAuth specifications, this endpoint accepts only the HTTP POST method.</li>
+    </ul>
+    <p>Important:  Direct access token revocation is only supported for Internally Managed Reference Tokens. Access tokens of the type JSON Web Token (JWT) do not support direct revocation. JWT access tokens can only be indirectly revoked if the associated refresh token is revoked, and the JWT's configuration field Access Grant GUID Claim Name is set for the given access token manager instance.</p>
+    
+
     <h2>OAuth 2.0 for Apps</h2>
     <ul>
       <li>Best practices for implementing <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps-05">OAuth 2.0 for Native Apps</a></li>
@@ -36,5 +94,12 @@
     <h3>Manual Copy and Paste (Not Recommended!!)</h3>
     <h3>Programmatic Extraction (Using embedded browsers a.k.a. web-views is not recommended!!)</h3>
 	
+    <h2>PingFederate screenshots</h2>
+    <ul>
+      <li><a href="images/screenshot_authorization_server_settings.jpg">AS Settings</a></li>
+      <li><a href="images/screenshot_oauth_settings_menu.jpg">OAuth Settings</a></li>
+      <li><a href="images/screenshot_roles_and_protocols.jpg">Roles and Protocols</a></li>
+    </ul>
+
     </body>
 </html>
