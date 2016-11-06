@@ -22,6 +22,8 @@
       <li>PingFederate supports a revocation endpoint:  /as/revoke_token.oauth2.  One potential "gotcha" may be the limits on revoking a JWT access token:  Direct access token revocation is only supported for Internally Managed Reference Tokens. Access tokens of the type JSON Web Token (JWT) do not support direct revocation. JWT access tokens can only be indirectly revoked if the associated refresh token is revoked, and the JWT's configuration field Access Grant GUID Claim Name is set for the given access token manager instance.</li>
       <li>PingFederate supports encrypted JSON Web Token (JWT) formatted OAuth access tokens</li>
       <li>PingFederate supports OAuth 2.0 Token Introspection (as defined in RFC 7662) for validating tokens.  This endpoint akes a parameter representing an OAuth 2.0 token and then returns a JWT that includes the claims</li>
+      <li>TODO: Include a data flow diagram of how the pieces might fit together</li>
+      <li>TODO: Create presentation of research results (and possibly Authorization Code Grant Flow)???</li>
     </ul>
 
     <h2>PingFederate OAuth 2.0 <a href="https://docs.pingidentity.com/bundle/pf_sm_pingfederateOauth20Endpoints_topic/page/concept/oAuth2_0Endpoints.html">Endpoints</a></h2>
