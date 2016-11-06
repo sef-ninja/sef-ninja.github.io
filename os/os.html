@@ -16,7 +16,7 @@
     
     <h2>Summary</h2>
     <ul>
-      <li>PingFederate provides great support for OAuth for iPad apps. PingFederate is listed as a contributer to a very recent (October 2016) IETF draft, <a href="https://www.pingidentity.com/en/blog/2016/03/10/using_appauth_to_enable_your_apps_with_mobile_sso.html">blog entry</a></li>
+      <li>PingFederate provides great support for OAuth for iPad apps. PingFederate is listed as a contributer to a very recent (October 2016) <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps-05">IETF best practices draft</a>, <a href="https://www.pingidentity.com/en/blog/2016/03/10/using_appauth_to_enable_your_apps_with_mobile_sso.html">blog entry</a>)</li>
       <li>PingFederate provides good documentation of how to configure the OAuth AS.  (TODO: Include link)</li>
       <li>PingFederate supports registering a client cert.  (TODO: Add link to docs.)  However, it is not clear whether this is a cert per Resource Owner, or a single cert that is used to authenticate the client application itself.</li>
       <li>PingFederate supports a revocation endpoint:  /as/revoke_token.oauth2.  One potential "gotcha" may be the limits on revoking a JWT access token:  Direct access token revocation is only supported for Internally Managed Reference Tokens. Access tokens of the type JSON Web Token (JWT) do not support direct revocation. JWT access tokens can only be indirectly revoked if the associated refresh token is revoked, and the JWT's configuration field Access Grant GUID Claim Name is set for the given access token manager instance.</li>
