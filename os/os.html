@@ -14,6 +14,16 @@
     <br />
     <br />
     
+    <h2>Summary</h2>
+    <ul>
+      <li>PingFederate provides great support for OAuth for iPad apps. PingFederate is listed as a contributer to a very recent (October 2016) IETF draft, <a href="https://www.pingidentity.com/en/blog/2016/03/10/using_appauth_to_enable_your_apps_with_mobile_sso.html">blog entry</a></li>
+      <li>PingFederate provides good documentation of how to configure the OAuth AS.  (TODO: Include link)</li>
+      <li>PingFederate supports registering a client cert.  (TODO: Add link to docs.)  However, it is not clear whether this is a cert per Resource Owner, or a single cert that is used to authenticate the client application itself.</li>
+      <li>PingFederate supports a revocation endpoint:  /as/revoke_token.oauth2.  One potential "gotcha" may be the limits on revoking a JWT access token:  Direct access token revocation is only supported for Internally Managed Reference Tokens. Access tokens of the type JSON Web Token (JWT) do not support direct revocation. JWT access tokens can only be indirectly revoked if the associated refresh token is revoked, and the JWT's configuration field Access Grant GUID Claim Name is set for the given access token manager instance.</li>
+      <li>PingFederate supports encrypted JSON Web Token (JWT) formatted OAuth access tokens</li>
+      <li>PingFederate supports OAuth 2.0 Token Introspection (as defined in RFC 7662) for validating tokens.  This endpoint akes a parameter representing an OAuth 2.0 token and then returns a JWT that includes the claims</li>
+    </ul>
+
     <h2>PingFederate OAuth 2.0 <a href="https://docs.pingidentity.com/bundle/pf_sm_pingfederateOauth20Endpoints_topic/page/concept/oAuth2_0Endpoints.html">Endpoints</a></h2>
     <ul>
       <li>/as/authorization.oauth2</li>
@@ -39,8 +49,6 @@
     <ul>
       <li>Support for OAuth 2.0 Token Introspection (as defined in RFC 7662) has been added to provide a standards-based mechanism to validate tokens.</li>
       <li>Encryption can now be configured on JSON Web Token (JWT) formatted OAuth access tokens.</li>
-      <li>The error responses for the Resource Owner Credentials grant type now provide more meaningful error_description parameter details. Messages can additionally be localized and customized through the PingFederate localization framework.</li>
-      <li>OAuth Persistent Grant Expiry can now be defined in minutes.</li>    
       <li>Elliptic Curve Digital Signature Algorithm (ECDSA) is now available for JWT formatted access tokens.</li> 
       <li>The JSON Web Token Access Manager can now be configured to publish a JSON Web Key Set with the keys/certificates that can be used for signature verification of access tokens.</li>
       <li>See <a href="https://docs.pingidentity.com/bundle/pf_sm_releaseNotes/page/pf_c_82.html">Release Notes</a></li>
