@@ -138,7 +138,10 @@
       <li><a href="https://docs.puppet.com/background/ssl/cert_anatomy.html#the-subject-dn-cn-certname-etc">X.509 Certificate Anatomy</a></li>
     </ul>
 
-    
+    <h2>Authorization Code Grant</h2>
+    <p>Q:  Why are there two distinct steps for first obtaining an authorization code, and then exchanging that authorization code for an access token?</p>
+    <p>A:  The first step requires authenticating the user to obtain the authorization code.  The second step (exchanging the authorization code for the token) requires the client to authenticate with the authorization server using a client_id and a client secret.  See <a href="http://stackoverflow.com/questions/16321455/what-is-the-difference-between-the-2-workflows-when-to-use-authorization-code-f">this stackoverflow question</a></p>
+
 
     </body>
 </html>
