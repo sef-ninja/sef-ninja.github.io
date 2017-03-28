@@ -2,7 +2,7 @@
 
     John Foster
 
-TODO: Look up Temple Grandin quote (little bit of obsession can get a lot of work done...)
+
 
     Concentrate all your thoughts upon the work at hand.  The sun's rays do not burn until brought to a focus.
 
@@ -51,7 +51,7 @@ TODO: Look up Temple Grandin quote (little bit of obsession can get a lot of wor
     Vincent Lombardi
 
 
-    
+
     Success is no accident.  It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
 
     Pele
@@ -80,13 +80,13 @@ TODO: Look up Temple Grandin quote (little bit of obsession can get a lot of wor
 
     Swami Vivekananda
 
-    
+
 
     Seeing much, suffering much, and studying much, are the three pillars of learning.
 
     Benjamin Disraeli
 
-    
+
 
     It’s not that I’m so smart, it’s just that I stay with problems longer.
 
@@ -151,7 +151,7 @@ TODO: Look up Temple Grandin quote (little bit of obsession can get a lot of wor
     One important key to success is self-confidence.  An important key to self-confidence is preparation.
 
     Arthur Ashe
-    
+
 
 
     Never, never, never, never give up.
@@ -301,3 +301,9 @@ TODO: Look up Temple Grandin quote (little bit of obsession can get a lot of wor
     To succeed, you must have tremendous perseverance, tremendous will. “I will drink the ocean,” says the persevering soul; “at my will mountains will crumble up.” Have that sort of energy, that sort of will; work hard, and you will reach the goal.
 
     Swami Vivekananda
+
+
+
+    I think that, as life is action and passion, it is required of a man that he should share the passion and action of his time at peril of being judged not to have lived.
+
+    Oliver Wendell Holmes Jr.
