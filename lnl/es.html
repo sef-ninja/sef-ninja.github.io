@@ -17,13 +17,17 @@
       <li>Overview</li>
       <li>TODO: What is event sourcing?</li>
       <li>Advantages</li>
+      <li>Decomposing an application into services is challenging.  Difficult to decompose:  Decomposing your domain model,  Executing transactions across your services, Querying your services</li>
+      <li>Good microservices rule of thumb:  Services do not share a database.  Advantages:  loose coupling, your service doesn't have to wait on locks from other services, Disadvantages: This functional decomposition of the database creates challenges with: data consistency, executing queries</li>
+      <li>Transactions: Our goal is to maintain data consistency across our services, ACID, 2PC (distributed transactions), CAP Theorem</li>
       <li>Events slide:  Events happen in the past.  (Event data records things that happen rather than things that are.)</li>
       <li>Events slide:  Events are immutable. Because events happen in the past, they cannot be changed or undone. However, subsequent events may alter or negate the effects of earlier events.</li>
       <li>Events slide:  Events are one-way messages. Events have a single source (publisher) that publishes the event. One or more recipients (subscribers) may receive events.</li>
       <li>Events slide:  Typically, events include parameters that provide additional information about the event.</li>
       <li>Events slide:  In the context of event sourcing, events should describe business intent.</li>
       <li>A log: Append-only, Totally-ordered sequence of records, Ordered by time.  (Include diagram, [][][][][][] ...)</li>
-      <li>Group Event-Sourcing Activity</li>
+      <li>Group Event-Sourcing Activity overview</li>
+      <li>Group Event-Sourcing Activity rules</li>
       <li>State Machine Replication Principle (From Jay Kreps...  He talks about a log-centric approach to distributed systems...):  If two identical, deterministic processes begin in the same state and get the same inputs in the same order, they will produce the same output and end in the same state.</li>
       <li></li>
       <li>Slide showing difference between event-driven and API driven.  (See New York Times research for diagrams.)</li>
@@ -49,5 +53,10 @@
       <li><a href="https://www.confluent.io/blog/publishing-apache-kafka-new-york-times/">New York Times uses log-based architecture with Kafka</a></li>
     </ul>
 
+    <h3>2PC</h3>
+    <ul>
+      <li>The objective of the 2 phase-commit (2PC) is to have a single ACID transaction on multiple nodes, whatever happens (read: failure and partition). So we have a distributed system with multiple databases and multiple clients. These clients can do simple transactions--going to a single node--or distributed transactions--going to multiple nodes. Transactions going on multiple nodes will use the 2PC protocol.</li>
+      <li>The traditional solution is 2PC (a.k.a. distributed transactions) but this is not a viable technology for modern applications. The CAP theorem requires you to chose between availability and consistency, and availability is usually the better choice. Moreover, many modern technologies, such as most NoSQL databases, do not even support ACID transactions let alone, 2PC.</li>
+    </ul>
   </body>
 </html>
