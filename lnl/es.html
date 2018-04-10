@@ -59,5 +59,15 @@
       <li>The objective of the 2 phase-commit (2PC) is to have a single ACID transaction on multiple nodes, whatever happens (read: failure and partition). So we have a distributed system with multiple databases and multiple clients. These clients can do simple transactions--going to a single node--or distributed transactions--going to multiple nodes. Transactions going on multiple nodes will use the 2PC protocol.</li>
       <li>The traditional solution is 2PC (a.k.a. distributed transactions) but this is not a viable technology for modern applications. The CAP theorem requires you to chose between availability and consistency, and availability is usually the better choice. Moreover, many modern technologies, such as most NoSQL databases, do not even support ACID transactions let alone, 2PC.</li>
     </ul>
+
+    <h2>Description</h2>
+    <p>Event Sourcing is an architectural pattern that involves modeling the state changes of your applications as an immutable sequence (log) of state-changing events.  Using Event Sourcing in a cloud-native/microservices architecture enables eventually-constent data for your event-driven services.  In this lunch 'n learn we will:</p>
+    <ul>
+      <li>Play a simple Event Sourcing game with Legos</li>
+      <li>Learn about the benefits of Event Sourcing</li>
+      <li>Learn about some of the drawbacks of Event Sourcing</li>
+    </ul>
+    <p>No coding experience required!!</p>
+
   </body>
 </html>
