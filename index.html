@@ -1,28 +1,31 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Denver Trip Plan</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-        <script type="text/javascript" src="denver/script.js"></script>
-        <style>
-            h1, h2, .action {
-                font-family: "Segoe UI",Arial,sans-serif;
-                font-style: normal;
-            }
-        </style>
-    </head>
-    <body ng-app="app">
-        <div ng-controller="HelloController">
-            <img src="logo.png"></img>
-            <h1>{{message}}</h1>
-            <div ng-repeat="day in days">
-                <h2>{{ day.name }}</h2>
-                <ul>
-                    <li class="action" ng-repeat="action in day.actions"> 
-                        {{ action }} 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </body>
+<html>
+  <head>
+    <title>Trip Itinerary</title>
+    <style>
+        h1, h2, li, p {
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-style: normal;
+        }
+    </style>
+  </head>
+  <body>
+    <a href="day1.html">
+      <img border="0" src="logo.png"></img>
+    </a><br />
+    <h1>Trip Itinerary</h1>
+
+    <h2><a href="southwest/day1.html">Day 1 (Saturday, July 10th): Arrive in Albuquerque</a></h2>
+    <h2><a href="southwest/day2.html">Day 2 (Sunday, July 11th): Albuquerque, Santa Fe</a></h2>
+    <h2><a href="southwest/day3.html">Day 3 (Monday, July 12th): Albuquerque to Sedona</a></h2>
+    <h2><a href="southwest/day4.html">Day 4 (Tuesday, July 13th): Sedona</a></h2>
+    <h2><a href="southwest/day5.html">Day 5 (Wednesday, July 14th): Sedona to Redondo Beach</a></h2>
+    <h2><a href="southwest/day6.html">Day 6 (Thursday, July 15th): Catalina, Long Beach</a></h2>
+    <h2><a href="southwest/day7.html">Day 7 (Friday, July 16th): Abalone Cove tide pools, Torrance Beach, Malibu</a></h2>
+    <h2><a href="southwest/day8.html">Day 8 (Saturday, July 17th): Torrance Sights, Beach (Newport?), Meet with Ben and family</a></h2>
+    <h2><a href="southwest/day9.html">Day 9 (Sunday, July 18th): Redondo Beach to Grand Canyon Village</a></h2>
+    <h2><a href="southwest/day10.html">Day 10 (Monday, July 19th): Antelope Canyon (if open), Grand Canyon</a></h2>
+    <h2><a href="southwest/day11.html">Day 11 (Tuesday, July 20th): Flagstaff</a></h2>
+    <h2><a href="southwest/day12.html">Day 12 (Wednesday, July 21th): Flagstaff to Albuquerque, Meteor Crater, Petrified Forest</a></h2>
+    <h2><a href="southwest/day13.html">Day 13 (Thursday, July 22th): Arrive in Wentzville</a></h2>    
+  </body>
 </html>
